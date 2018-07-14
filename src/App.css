@@ -1,0 +1,263 @@
+.App {
+  text-align: center;
+}
+/* loading */
+.loading{
+      border-radius: 5px;
+    width: 112px;
+    margin-left: 35%;
+    background-color: whitesmoke;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    cursor: pointer;
+    color:darkgrey;
+    border:1px solid gray;
+
+}
+/* price details */
+.price{
+     text-align: left;
+    margin: auto;
+    padding: 10px 0px 0px;
+}
+/* product details */
+section{
+  text-align: left;
+  border-bottom: 0.2px solid lightgrey;
+}
+.para{
+  text-align: left;
+  font-size: 13px;
+  margin-bottom:-2px 
+}
+.adjust{
+  margin-top:6px;
+}
+.customRadio{
+  cursor:pointer;
+  width:59px;
+  height: 24px;
+  display: inline-block;
+  position: relative; 
+  background-color: white;
+  border-radius: 9%;
+  margin-right: 5px;
+  
+}
+/* .customRadio:hover{
+  background-color: grey;
+} */
+ .active{
+  background-color: grey !important;
+}
+.dotWraper{
+  
+  position: relative;
+}
+.dot1 {
+  position: absolute;
+    background-color:black;
+    width: 10px;
+    height: 10px;
+    top: 7px; 
+    left: 7px;
+    border-radius: 50%;
+}
+.dot2 {
+  position: absolute;
+  background-color:gold;
+  width: 10px;
+  height:10px;
+  top: 7px;
+  left:7px;
+  border-radius: 50%;
+}
+.text{
+  font-size: 9px;
+  position: absolute;
+  color: lightgrey;
+  left: 22px;
+  letter-spacing: 1px;
+  top: 5px;
+}
+
+/* customSize */
+.customSize{
+  cursor:pointer;
+  display: inline-block;
+  position: relative; 
+  border-radius: 9%;
+  margin-right: 5px;
+  margin-bottom:10px
+}
+.sizeWraper{
+  border:1px solid gray;
+  width: 50px;
+  height: 31px;
+  border-radius: 5px;
+}
+
+.textNew{
+  font-size: 9px;
+  position: absolute;
+  color: lightgrey;
+  left: 11px;
+  letter-spacing: 1px;
+  top: 10px;
+}
+/* plusminus */
+.quantity{
+  margin-bottom:10px;
+}
+.adjust td{
+  padding:7px 10px;
+ border:1px solid lightgrey;
+}
+.count{
+background-color: rgb(45,174,162);
+color: white;
+}
+.plusminus{
+  cursor:pointer;
+  background-color: whitesmoke;
+  color: rgb(45,174,162);
+}
+.fromCenter {
+  color: #666;
+  font-size: 17px;
+  display:inline-block;
+  text-align: left;
+  cursor:pointer;
+  margin:0;
+  text-transform:uppercase;
+ }
+.fromCenter:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px blue;  
+  transform: scaleX(0.5);  
+  transition: transform 800ms ease-in-out;
+}
+.fromCenter:hover:after {
+ transform: scaleX(1);
+}
+.image-slide {
+  width: 70%;
+  position: relative;
+   min-height: 70%; 
+	transition: background-image .3s ease-in-out;
+}
+.slide-arrow {
+	cursor: pointer;
+	font-size: 2rem;
+	position: absolute;
+	top: 50%;
+}
+
+.slide-arrow.right {
+	right:0px;
+}
+
+.slide-arrow.left {
+	left: 0px;
+}
+/* add cart */
+.addItems{
+  cursor:pointer
+}
+.colourBarCart{
+  background-color: rgb(45,174,162);
+  color: white;
+  cursor:pointer;
+}
+.addToCart{
+  cursor:pointer;
+  position: relative;
+  left: 95px;
+}
+
+.images{
+  width:100%;
+  padding:10px 20px 0px 0px;
+  margin-right: 50px !important;
+  text-align: center ;
+  cursor:pointer
+}
+.images h6{
+  font-size: 12px;
+  text-align: center
+}
+.detailsContain{
+  margin-bottom: 30px;
+}
+#footer{
+  
+  background-color: black;
+  width: 100%;
+}
+.optlist {
+  display: inline-flex;
+  padding: 25px 0px 5px 5px !important;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.optlist li {
+  list-style: none;
+  border-right: 1px solid white;
+  padding: 0px 40px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.optlist li a{
+  color: white;
+}
+@media only screen {
+  #footer{
+       display: block;
+      z-index: 0;
+      right: 0px;
+      opacity:0.95;
+      margin-right: 5px;
+      border-radius: 2px 2px 0px 0px;
+      bottom: 0px;
+      padding: 0px 0px;
+      cursor: pointer;
+  }
+  .images img{
+   height:90px;
+  }
+    #footer  a{
+        font-size: 15px;
+    }
+  .optlist li {
+      font-size: 14px;
+      padding: 0px 22px;
+  }
+}
+
+@media (max-width:600px) {
+  .optlist li {
+      padding: 0px 13px;
+      font-size: 11px;
+  }
+  .fromCenter{
+    font-size: 17px;
+    margin: 5px;
+  }
+  }
+
+@media (max-width:480px) {
+  .optlist li {
+      padding: 0px 5px;
+      font-size: 8px;
+  }
+}
+
+.optlist li:last-child {
+  border-right: none;
+}
